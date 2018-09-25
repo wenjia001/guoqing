@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国庆出游</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <style>
+        body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+        img{border:0;vertical-align:middle}
+        html {
+            font-size: 100px;
+        }
+        .mainBox {
+            position: relative;
+            margin: 0 auto;
+            max-width: 750px;
+        }
+        .mainBox img{
+            width: 100%;
+        }
+        .btn{
+            width: 2.8rem;
+            height: .8rem;
+            /*border:1px solid #000;*/
+            border-radius: .4rem;
+            position: absolute;
+            top: 7.87rem;
+            left: 50%;
+            margin-left: -1.4rem;
+            /*background: none;*/
+            opacity: 0;
+        }
+    </style>
+    <!--REM-->
+    <script>
+        ~function () {
+            computedFont();
+            window.addEventListener('resize', computedFont, false);
+            function computedFont() {
+                var deviceW = document.documentElement.clientWidth;
+                if (deviceW > 750) return;
+                document.documentElement.style.fontSize = deviceW / 750 * 100 + 'px';
+            }
+        }();
+    </script>
+</head>
+<body>
+<main class="mainBox">
+    <img src="img/index.jpg" alt="">
+    <button class="btn"></button>
+</main>
+</body>
+</html>
