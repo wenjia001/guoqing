@@ -26,7 +26,6 @@
         input[type="radio"]{
             width: .26rem;
             height: .26rem;
-
         }
         .one{
             position: absolute;
@@ -54,9 +53,14 @@
 </head>
 <body>
 <main class="mainBox">
-    <img src="img/one.jpg" alt="">
+    <img src="img/one.jpg" alt="" id="img">
     <input type="radio" class="one" name="question">
     <input type="radio" class="two" name="question">
 </main>
+<script>
+    var H = document.documentElement.clientHeight;
+    var img = document.getElementById("img");
+    img.style.height = H + "px";
+</script>
 </body>
 </html>

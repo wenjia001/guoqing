@@ -49,8 +49,13 @@
 </head>
 <body>
 <main class="mainBox">
-    <img src="img/index.jpg" alt="">
+    <img src="img/index.jpg" alt="" id="img">
     <button class="btn"></button>
 </main>
+<script>
+    var H = document.documentElement.clientHeight;
+    var img = document.getElementById("img");
+    img.style.height = H + "px";
+</script>
 </body>
 </html>
