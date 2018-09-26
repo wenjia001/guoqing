@@ -30,12 +30,12 @@
         }
         .one{
             position: absolute;
-            top: 2.76rem;
+            top: 20.6%;
             left: .77rem;
         }
         .two{
             position: absolute;
-            top: 3.76rem;
+            top: 28.1%;
             left: .77rem;
         }
     </style>
@@ -54,9 +54,14 @@
 </head>
 <body>
 <main class="mainBox">
-    <img src="img/two.jpg" alt="">
+    <img src="img/two.jpg" alt="" id="img">
     <input type="radio" class="one" name="question">
     <input type="radio" class="two" name="question">
 </main>
+<script>
+    var H = document.documentElement.clientHeight;
+    var img = document.getElementById("img");
+    img.style.height = H + "px";
+</script>
 </body>
 </html>

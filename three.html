@@ -30,16 +30,16 @@
             left: .77rem;
         }
         .one{
-            top: 2.76rem;
+            top: 20.6%;
         }
         .two{
-            top: 3.76rem;
+            top: 28.1%;
         }
         .three{
-            top: 4.75rem;
+            top: 35.8%;
         }
         .four{
-            top: 5.75rem;
+            top: 43.2%;
         }
     </style>
     <!--REM-->
@@ -57,11 +57,16 @@
 </head>
 <body>
 <main class="mainBox">
-    <img src="img/three.jpg" alt="">
+    <img src="img/three.jpg" alt="" id="img">
     <input type="radio" class="one" name="question">
     <input type="radio" class="two" name="question">
     <input type="radio" class="three" name="question">
     <input type="radio" class="four" name="question">
 </main>
+<script>
+    var H = document.documentElement.clientHeight;
+    var img = document.getElementById("img");
+    img.style.height = H + "px";
+</script>
 </body>
 </html>

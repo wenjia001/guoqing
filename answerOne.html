@@ -45,8 +45,13 @@
 </head>
 <body>
 <main class="mainBox">
-    <img src="img/answerOne.jpg" alt="">
+    <img src="img/answerOne.jpg" alt="" id="img">
     <p class="tittle">长按保存图片，分享到朋友圈找找同伴吧~</p>
 </main>
+<script>
+    var H = document.documentElement.clientHeight-30;
+    var img = document.getElementById("img");
+    img.style.height = H + "px";
+</script>
 </body>
 </html>
